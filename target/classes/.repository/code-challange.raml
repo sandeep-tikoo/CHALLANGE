@@ -1,0 +1,34 @@
+#%RAML 1.0
+version: v1
+title: code-challange
+mediaType: application/json
+protocols: [HTTP, HTTPS]
+
+documentation:
+  - title: Code Challange API Overview
+    content:
+      !include documentation/overview.markdown
+  - title: Code Challange API Specification
+    content:
+      !include documentation/apiSpec.markdown
+
+schemas:
+f
+/challange:
+  post:
+    description: POST
+    body:
+      schema : challange
+      example: !include examples/challangeExample.JSON
+    responses: 
+      201:
+        body:
+          application/json:
+            example: |
+              { "message" : "A new resource is created"}
+      500:
+        body:
+          application/json:
+            example: |
+              { "message" : "Internal Server Error "}  
+    

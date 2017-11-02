@@ -1,0 +1,17 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "properties": {
+      "challange-fields": {
+            "properties": {
+               "customerId": {
+                  "type": "string"
+               },
+               "policyId": {
+                  "type": "string"
+               }
+            },
+            "type": "object"
+      }
+   }
+}
